@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 import "./Contact.css";
 import profile from "../assets/formals.png";
 
@@ -47,9 +46,25 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/joshi-sanakar-telaprolu-34a68b1bb" },
-    { icon: <FaInstagram />, url: "https://www.instagram.com/joshisankar_5051/" },
-    { icon: <FaFacebook />, url: "https://www.facebook.com/sankar.joshi.9828/" },
+    {
+      icon: "https://www.linkedin.com/favicon.ico",
+      url: "https://www.linkedin.com/in/joshi-sanakar-telaprolu-34a68b1bb"
+    },
+
+    {
+      icon: "https://img.icons8.com/ios-filled/50/ffffff/github.png",
+      url: "https://github.com/JoshiSankar-4021"
+    },
+
+    {
+      icon: "https://cdn-icons-png.flaticon.com/512/2111/2111463.png",
+      url: "https://www.instagram.com/joshisankar_5051/"
+    },
+
+    {
+      icon: "https://www.facebook.com/favicon.ico",
+      url: "https://www.facebook.com/sankar.joshi.9828/"
+    },
   ];
 
   return (
@@ -67,7 +82,6 @@ const Contact = () => {
         </p>
 
         <div className="contact-grid">
-          {/* LEFT */}
           <div className="contact-info-wrapper">
             <div className="profile-column">
               <img
@@ -79,8 +93,8 @@ const Contact = () => {
                 Joshi Sankar Telaprolu
               </h3>
             </div>
-
             <div className="contact-info">
+              <br />
               <div className="info-item">
                 <span>📞 Phone</span>
                 <p>+91 9347175051</p>
@@ -98,8 +112,15 @@ const Contact = () => {
                     href={social.url}
                     target="_blank"
                     rel="noreferrer"
+                    aria-label={social.url.split('/')[2]}
                   >
-                    {social.icon}
+                    <img 
+                      src={social.icon} 
+                      alt="Social icon"
+                      className="social-icon"
+                      width="64" 
+                      height="64"
+                    />
                   </a>
                 ))}
               </div>
