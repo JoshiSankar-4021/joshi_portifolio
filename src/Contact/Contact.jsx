@@ -78,7 +78,9 @@ const Contact = () => {
       >
         <h2 className="contact-title">Contact Me</h2>
         <p className="contact-subtitle">
-          Let’s connect! Feel free to reach out for projects or collaborations.
+          Let’s connect! I’m open to projects and collaborations, and 
+          always eager to learn new technologies while sharing knowledge through discussions and hands-on work.
+          If you’re interested in building, learning, or teaching together, feel free to reach out.
         </p>
 
         <div className="contact-grid">
