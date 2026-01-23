@@ -5,6 +5,7 @@ import Home from './Home/Home.jsx';
 import About from './About/About.jsx';
 import Contact from './Contact/Contact.jsx';
 import Projects from './Projects/Projects.jsx';
+import Services from './Services/Services.jsx';
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/projects' element={<Projects />} />
+        <Route path='/services' element={<Services />} />
       </Routes>
     </>
   );
