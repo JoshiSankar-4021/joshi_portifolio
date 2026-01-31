@@ -14,6 +14,14 @@ const servicesData = [
       "Creating high-performance Android and iOS applications with smooth UI and reliable backend integration.",
     icon: "/assets/mobiledevelopment.png",
   },
+
+  {
+    title: "Portfolio Designing",
+    description:
+      "Designing stunning, responsive portfolio sites with modern React/Next.js, animations, and optimized performance.",
+    icon: "/assets/portfolio.png",  // or "/assets/portfolio.png"
+  },
+
   {
     title: "Generative AI Solutions",
     description:
