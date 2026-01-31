@@ -5,66 +5,69 @@ const servicesData = [
   {
     title: "Web Development",
     description:
-      "Building responsive, scalable web applications using React, Next.js, and modern UI/UX best practices.",
-    icon: "🌐",
+      "Building fast, responsive, and scalable websites using modern technologies like React, Next.js, and Node.js.",
+    icon: "/assets/webdevelopment.png",
   },
   {
     title: "Mobile App Development",
     description:
-      "Developing Android and Flutter applications including social, utility, and business-focused apps.",
-    icon: "📱",
-  },
-  {
-    title: "Backend & APIs",
-    description:
-      "Designing secure, high-performance REST APIs using Node.js or Spring Boot with SQL and NoSQL databases.",
-    icon: "⚙️",
-  },
-  {
-    title: "Deployment & Integrations",
-    description:
-      "Application deployment, Firebase integrations, cloud storage setup, and test builds (APK & internal testing).",
-    icon: "🚀",
-  },
-  {
-    title: "Portfolio Development & Maintenance",
-    description:
-      "Creating professional developer portfolios with modern UI, performance optimization, SEO, and ongoing maintenance.",
-    icon: "🎨",
+      "Creating high-performance Android and iOS applications with smooth UI and reliable backend integration.",
+    icon: "/assets/mobiledevelopment.png",
   },
   {
     title: "Generative AI Solutions",
     description:
-      "Building AI-powered features using Large Language Models for chat, content generation, and intelligent workflows.",
-    icon: "🧠",
+      "Developing AI-powered applications including chatbots, content generation, and smart automation systems.",
+    icon: "/assets/artificialintelligence.png",
+    featured: true,
   },
   {
-    title: "AI Agents & Automation",
+    title: "AI Agents & Automation ChatBots",
     description:
-      "Designing autonomous AI agents for task automation, API orchestration, data processing, and smart decision-making.",
-    icon: "🤖",
+      "Designing intelligent AI agents to automate workflows, customer support, and business operations.",
+    icon: "/assets/chatbot.png",
+    featured: true,
   },
   {
-    title: "IoT & AI-Based Development",
+    title: "Digital Marketing",
     description:
-      "Developing smart IoT solutions integrated with AI for real-time monitoring, automation, predictive insights, and connected systems.",
-    icon: "📡",
+      "Helping brands grow online through SEO, social media marketing, paid ads, and content strategy.",
+    icon: "/assets/digitalmarketing.png",
+  },
+  {
+    title: "Startup & SaaS Consulting",
+    description:
+      "Providing technical guidance, MVP development, and architecture planning for startups and SaaS products.",
+    icon: "/assets/startup1.png",
   },
 ];
 
-
 const Services = () => {
   return (
-    <section className="services-section" id="services">
-      <h2 className="services-title">Services</h2>
+    <section className="services-section">
+      <h2 className="services-title">My Services</h2>
       <p className="services-subtitle">
-        What I can help you build
+        What I can build for you using modern technologies
       </p>
 
       <div className="services-grid">
         {servicesData.map((service, index) => (
-          <div className="service-card" key={index}>
-            <div className="service-icon">{service.icon}</div>
+          <div
+            className={`service-card ${service.featured ? "featured" : ""}`}
+            key={index}
+          >
+            <div className="service-icon">
+              {typeof service.icon === "string" &&
+              service.icon.startsWith("/") ? (
+                <img
+                  src={service.icon}
+                  alt={service.title}
+                  className="service-icon-img"
+                />
+              ) : (
+                service.icon
+              )}
+            </div>
             <h3>{service.title}</h3>
             <p>{service.description}</p>
           </div>
