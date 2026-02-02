@@ -5,6 +5,9 @@ import "./Project.css";
 import profile from "../assets/topicreator/profile.png";
 import topiccreator from "../assets/topicreator/topiccreator.png";
 import topics from "../assets/topicreator/topics.png";
+import comments from "../assets/topicreator/mycommentsweb.png";
+import mytopicsweb from "../assets/topicreator/mytopicsweb.png";
+import allusers from "../assets/topicreator/allusers.png";
 
 import topiccreatorapp from "../assets/topicreactorapp/Topic_Creator.png";
 import drawer from "../assets/topicreactorapp/Drawer.png";
@@ -21,7 +24,7 @@ import appstopic from "../assets/topicreactorapp/topics.png";
 const projects = [
   {
     title: "TopicReactor",
-    images: [profile, topiccreator, topics],
+    images: [profile, topiccreator, topics,comments,mytopicsweb,allusers],
     description: "Fun social web app for topics & comments. Twitter-style chat!",
     technologies: "React, Node.js, PostgreSQL",
     category: "Web App",
