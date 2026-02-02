@@ -23,6 +23,14 @@ const servicesData = [
   },
 
   {
+    title: "Professional Training on My Tech Stack",
+    description:
+      "End-to-end professional training service focused on our real-world tech stack. Designed to upskill students, developers, and teams through hands-on projects, production-level practices, and industry-standard workflows used in live applications.",
+    icon: "/assets/training.png",
+    featured: true,
+  },
+
+  {
     title: "Generative AI Solutions",
     description:
       "Developing AI-powered applications including chatbots, content generation, and smart automation systems.",

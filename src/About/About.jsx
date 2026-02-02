@@ -45,11 +45,11 @@ const About = () => {
           <a
             href="https://drive.google.com/uc?export=download&id=1pfnvDn6169aV4hr_1ss5cxs-47zJnsQF" 
             download
-            target="_blank" 
+            target="_blank"
             rel="noopener noreferrer"
           >
             <motion.button className='downloadbutton'>
-              Download Resume
+            Resume
             </motion.button>
           </a>
 

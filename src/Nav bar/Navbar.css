@@ -4,36 +4,44 @@
   box-sizing: border-box;
 }
 
+/* ================================
+   NAVBAR CONTAINER
+================================ */
 .navbar-container {
   position: fixed;
   top: 0;
   width: 100%;
   height: 80px;
-  background: linear-gradient(135deg, #0d0f12 0%, #1a1d23 100%);
-  padding-right: 5%;
+  background: linear-gradient(135deg, #0d0f12, #1a1d23);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 5%;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
   z-index: 1000;
   font-family: 'Poppins', sans-serif;
 }
 
-.image {
+/* ================================
+   LEFT SECTION (Hamburger + Logo)
+================================ */
+.left-section {
   display: flex;
   align-items: center;
-  flex-shrink: 0;
+  gap: 1rem;
 }
 
+/* LOGO */
 .logo {
-  height: 70px;
+  height: 65px;
   width: auto;
   object-fit: contain;
 }
 
-
-
-.navbar {
+/* ================================
+   DESKTOP NAVBAR
+================================ */
+.desktop-navbar {
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -60,20 +68,75 @@
   font-weight: 600;
 }
 
+/* ================================
+   HAMBURGER ICON
+================================ */
+.hamburger {
+  display: none;
+  font-size: 1.9rem;
+  color: #c7cacc;
+  cursor: pointer;
+}
+
+.hamburger:hover {
+  color: #809fff;
+}
+
+/* ================================
+   SIDE MENU (MOBILE)
+================================ */
+.side-menu {
+  position: fixed;
+  top: 60px;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  background: #1a1d23;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: left 0.3s ease;
+  z-index: 1500;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.side-menu .nav-link {
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+}
+
+/* ================================
+   OVERLAY
+================================ */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1400;
+}
+
+/* ================================
+   BODY OFFSET
+================================ */
 body {
   padding-top: 80px;
   background: #0d0f12;
 }
 
+/* ================================
+   RESPONSIVE
+================================ */
 @media (max-width: 768px) {
-  .navbar-container {
-    height: auto;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
+  .desktop-navbar {
+    display: none;
   }
-  
-  body {
-    padding-top: 120px;
+
+  .hamburger {
+    display: block;
   }
 }
+  
