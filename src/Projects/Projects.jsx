@@ -17,6 +17,12 @@ import appprofile from "../assets/topicreactorapp/Profile.png";
 import topicreactorlogin from "../assets/topicreactorapp/topicreactorlogin.png";
 import appstopic from "../assets/topicreactorapp/topics.png";
 
+import home from "../assets/home_decor/home.png";
+import about from "../assets/home_decor/about.png";
+import products from "../assets/home_decor/products.png";
+import stores from "../assets/home_decor/stores.png";
+import contact from "../assets/home_decor/contact.png"
+
 /* ================================
    PROJECT DATA
 ================================ */
@@ -41,12 +47,14 @@ const projects = [
     playStore: "https://play.google.com/store/apps/details?id=com.taskmaster",
   },
   {
-    title: "Image Classifier AI",
-    images: [topiccreator],
-    description: "AI model that classifies images into multiple categories.",
-    technologies: "Python, TensorFlow, Flask",
-    category: "AI / ML",
-    videoDemo: "https://drive.google.com/file/d/ai-demo-video",
+    title: "Home decor",
+    images: [home,about,products,stores,contact],
+    description: "This is a static website displaying all the home decorations",
+    technologies: "React.js,Next.js",
+    category: "WEB SITE",
+    liveUrl: "https://hoemesdecorations.vercel.app/",
+    githubFrontend: "https://github.com/JoshiSankar-4021/home_decor.git",
+    githubBackend: "https://github.com/JoshiSankar-4021/emailsenderhomedecor.git",
   },
 ];
 
