@@ -40,14 +40,14 @@ const projects = [
     category: "Mobile App",
     playStore: "https://play.google.com/store/apps/details?id=com.taskmaster",
   },
-  {
-    title: "Image Classifier AI",
-    images: [topiccreator],
-    description: "AI model that classifies images into multiple categories.",
-    technologies: "Python, TensorFlow, Flask",
-    category: "AI / ML",
-    videoDemo: "https://drive.google.com/file/d/ai-demo-video",
-  },
+  // {
+  //   title: "Image Classifier AI",
+  //   images: [topiccreator],
+  //   description: "AI model that classifies images into multiple categories.",
+  //   technologies: "Python, TensorFlow, Flask",
+  //   category: "AI / ML",
+  //   videoDemo: "https://drive.google.com/file/d/ai-demo-video",
+  // },
 ];
 
 /* ================================
