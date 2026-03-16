@@ -36,14 +36,11 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           >
-            1.6+ years building enterprise solutions at Pennant Technologies, 
-            Visakhapatnam. Expert in Java/Spring Boot backends, React/NextJS 
-            frontends, and full-stack LOS/LMS systems. Passionate about crafting 
-            scalable web/mobile apps with clean code.
+            2+ years of experience in software development, including enterprise product development at Pennant Technologies, Visakhapatnam and current work as a Developer & Trainer at CHV Apps. Experienced in building Java/Spring Boot backend systems, React/NextJS web applications, and Flutter mobile apps. Worked on enterprise Loan Origination System (LOS) and Loan Management System (LMS) products and full-stack web applications. Passionate about developing scalable web and mobile solutions, mentoring students in modern technologies like React and Flutter, and writing clean, maintainable code.
           </motion.p>
 
           <a
-            href="https://drive.google.com/uc?export=download&id=1pfnvDn6169aV4hr_1ss5cxs-47zJnsQF" 
+            href="https://drive.google.com/uc?export=download&id=1ZrRQ0JEeDdIAYgDxrrKUWAVroEn9f2_z" 
             download
             target="_blank"
             rel="noopener noreferrer"
